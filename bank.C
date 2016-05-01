@@ -50,7 +50,7 @@
     if(x.compare(open) != 0 && x.compare(closed) != 0)
         cout << "Invalid state of operation" << endl;
  };
-bool Compare(const Customer &i, const Customer &j) const
+bool Compare(const Customer &i, const Customer &j) 
      {
          int customer1 = i.arrivalTime;
          int customer2 = j.arrivalTime;
