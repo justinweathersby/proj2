@@ -15,4 +15,4 @@ public:
 	int stateTime;
 	int nextBreakTimeBad;
 };
-#endif#
+#endif

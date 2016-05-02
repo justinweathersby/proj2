@@ -2,7 +2,7 @@ CC= g++
 CCFLAGS= -g -Wall
 
 exec: main.o bank.o Customer.o manager.o teller.o goodTeller.o badTeller.o
-	$(CC) $(CCFLAGS) -o Prog main.o bank.o customer.o manager.o teller.o
+	$(CC) $(CCFLAGS) -o Prog main.o bank.o customer.o manager.o teller.o goodTeller.o badTeller.o
 
 main.o: main.C bank.h
 	$(CC) $(CCFLAGS) -c main.C
