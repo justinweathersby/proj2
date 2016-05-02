@@ -1,7 +1,7 @@
 CC= g++
 CCFLAGS= -g -Wall
 
-exec: main.o bank.o makefile Customer.o manager.o teller.o
+exec: main.o bank.o Customer.o manager.o teller.o goodTeller.o badTeller.o
 	$(CC) $(CCFLAGS) -o Prog main.o bank.o customer.o manager.o teller.o
 
 main.o: main.C bank.h
@@ -17,7 +17,7 @@ Customer.o: Customer.C Customer.h
 	$(CC) $(CCFLAGS) -c Customer.C
 
 teller.o: teller.C teller.h
-	$(CC) $(CCFLAGS) -c Teller.C
+	$(CC) $(CCFLAGS) -c teller.C
 
 goodTeller.o: goodTeller.C goodTeller.h
 	$(CC) $(CCFLAGS) -c goodTeller.C
